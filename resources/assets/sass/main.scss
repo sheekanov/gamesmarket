@@ -1,0 +1,117 @@
+@import '_parts/font.scss';
+/*HI MEDVED!
+*/
+body {
+  background-color: #436b39;
+  background-image: url(../img/bg_main.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* main wrapper page*/
+.main-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* main-header page*/
+@import '_parts/header.scss';
+
+/* middle block page */
+.middle {
+  background-color: rgb(253, 253, 240);
+  padding: 0 57px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.sidebar {
+  flex: 0 0 190px;
+  padding: 50px 0 5px;
+}
+
+@import '_parts/sidebar.scss';
+
+.main-content {
+  flex: 0 0 840px;
+  padding: 45px 0 0;
+}
+
+.bcg-title {
+  position: relative;
+  z-index: 5;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -35%;
+    left: -15%;
+    height: 160%;
+    max-height: 190%;
+    width: 130%;
+    background-color: #d0e26c;
+    z-index: -5;
+  }
+}
+
+.btn-buy-wrap {
+  margin-top: 10px;
+  padding: 10px 0 5px;
+  &__btn-link {
+    font-size: 24px;
+    font-family: "PT_Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    line-height: 26px;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    position: relative;
+    z-index: 5;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -35%;
+      left: -20%;
+      right: -20%;
+      height: 160%;
+      width: 165%;
+      background-color: #d0e26c;
+      z-index: -5;
+    }
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.line {
+  display: block;
+  margin: 20px 0 0 10px;
+  background-color: rgb(210, 228, 215);
+  width: 100%;
+  height: 1px;
+}
+
+@import '_parts/content.scss';
+@import '_parts/pagination.scss';
+@import '_parts/wp_style.scss';
+@import '_parts/footer.scss';
+@import '_parts/modals.scss';
+@import '_parts/additionalStyles';

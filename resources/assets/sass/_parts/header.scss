@@ -1,0 +1,122 @@
+.main-header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 0 10px;
+}
+
+.main-navigation {
+  padding: 4px 0;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 430px;
+  padding: 0;
+  justify-content: center;
+  height: 22px;
+  &__item {
+    margin: 0 0 3px;
+    list-style: none;
+    border-right: 2px solid #4c5f14;
+    &:last-child {
+      border-right: none;
+    }
+    &__link {
+      font-size: 22px;
+      font-family: "Bebas_Neue", sans-serif;
+      line-height: 26px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #4c5f14;
+      padding: 0 15px;
+      &:hover,
+      &:focus {
+        color: rgb(210, 131, 36);
+      }
+    }
+  }
+}
+
+/* Phone in Header*/
+.header-contact__phone {
+  position: relative;
+  z-index: 5;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -35%;
+    left: -10%;
+    height: 180%;
+    width: 120%;
+    background-color: #d0e26c;
+    z-index: -5;
+  }
+  &-link {
+    font-size: 26px;
+    font-family: "Bebas_Neue", sans-serif;
+    color: rgb(0, 0, 0);
+    line-height: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+/* busket in header*/
+.payment-container {
+}
+
+.payment-basket__status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  &__icon-block {
+    width: 50%;
+    font-size: 2.3rem;
+    text-align: center;
+  }
+
+  &__basket {
+    width: 50%;
+    font-size: 1rem;
+    font-family: "PT_Sans", sans-serif;
+    &-value {
+      font-family: "PT_Sans", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+    }
+    &-value-descr {
+      font-family: "PT_Sans", sans-serif;
+      font-size: 15px;
+      font-weight: normal;
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+/* autorization-block in header*/
+.authorization-block {
+  padding: 4px 0;
+
+  .authorization-block__link {
+    font-size: 1rem;
+    font-family: "PT_Sans", sans-serif;
+    color: rgb(76, 95, 20);
+    line-height: 1.4rem;
+    text-decoration: none;
+    padding: 0 5px;
+    border-right: 2px solid #4c5f14;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+}

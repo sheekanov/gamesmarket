@@ -1,0 +1,28 @@
+doctype html
+html(lang='ru')
+    head
+        title category - ГеймсМаркет
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        link(rel='stylesheet', href='css/libs.min.css')
+        link(rel='stylesheet', href='css/main.css')
+        link(rel='stylesheet', href='css/media.css')
+    body
+        .main-wrapper
+            include _parts/header
+            .middle
+                .sidebar
+                    include _parts/sidebar
+                .main-content
+                    .content-top
+                        .content-top__text
+                            | Купить игры неборого без регистрации смс с торента, получить компкт диск, скачать Steam игры после оплаты
+                        .slider
+                            img(src="img/slider.png", alt="Image").image-main
+                    .content-middle
+                        include _parts/content/category-content
+                    .content-bottom
+            footer.footer
+                include _parts/footer
+        script(src='js/main.js')

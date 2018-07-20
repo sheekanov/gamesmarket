@@ -1,0 +1,44 @@
+.page-nav {
+  padding: 10px 20px;
+  position: relative;
+  z-index: 5;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10%;
+    left: -0%;
+    right: 10%;
+    height: 110%;
+    width: 130%;
+    background-color: rgb(208, 226, 108);
+    z-index: -5;
+  }
+  &__item {
+    list-style: none;
+    display: inline-block;
+
+    padding: 0 5px 0 8px;
+    border-left: 3px solid #000;
+    &:first-child{
+      border-left: none;
+    }
+    &__link {
+      display: block;
+      text-decoration: none;
+      font-family: "PT_Sans", sans-serif;
+      font-size: 1.7rem;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      line-height: 1.7rem;
+      text-align: center;
+      &:hover,
+      &:focus,
+      &--active {
+        color: #d28324;
+      }
+    }
+
+  }
+}
